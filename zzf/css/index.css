@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.pptbox{
+    width: 400px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.pptbox  .innerwrapper{
+    width:2400px;/*当增加了li之后，大盒子的宽度也要相应的增加 这里增加了两个li，每个400，所以ul 从原来的1600变成了2400*/
+    height: 100px;
+    list-style: none;
+    position: absolute;
+    left: -400px;
+}
+
+.innerwrapper li
+{
+    width:400px;
+    height:100px;
+    float: left;
+}
+.innerwrapper li a
+{
+    display: block;
+}
+
+.innerwrapper li a img
+{
+    width: 400px;
+    height:100px;
+    display:block;
+}
+
+.btnleft{
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    left:0;
+    top:25px;
+    background-color: black;
+    background-image:url(../images/nav.png);
+    background-position: -10px 4px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.btnright{
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    right:0;
+    top:25px;
+    background-color: black;
+    background-image:url(../images/nav.png);
+    background-position: -54px 4px;
+    cursor: pointer;
+    z-index: 100;
+    
+}
+
+/*控制按钮开始*/
+
+.controls{
+    width:96px;
+    position: absolute;
+    left:152px;
+    bottom:10px;
+    list-style: none;
+}
+.controls li{
+    width: 20px;
+    height:20px;
+    background-color: gold;
+    float: left;
+    margin-right: 5px;
+    text-align: center;
+    border-radius:10px ;
+    cursor: pointer;
+}
+
+.controls li.current
+{
+    background-color:aqua;
+    color: #fff;
+}
+
+/*控制按钮结束*/
+
+
+#mouth .banner{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#mouth .menu-list{
+    margin-top: 84px;
+    width: 200px;
+    height: 430px;
+    background-color: #f3f3f3;
+    margin-bottom: 40px;
+    position: relative;
+}
+#mouth .menu-list li{
+    line-height: 30px;
+    font-size: 14px;
+    padding: 1px solid #f3f3f3;
+}
+#mouth .menu-list li p{
+    padding-left:13px ;
+    border: 1px solid #f3f3f3;
+}
+#mouth li .submenu {
+    width: 580px;
+    height: 500px;
+    background: #fff;
+    border: 1px solid #ff6600;
+    position: absolute;
+    top: 0;
+    left: 199px;
+    display: none;
+    z-index: 888;
+}
+#mouth li.active > p{
+    position: relative;
+    z-index: 9999;
+    border: 1px solid #ff6600;
+    background: #fff;
+    border-right:1px solid #fff;
+}
+#mouth li.active > p a{
+color: #ff6600;
+}
+#mouth li.active  .submenu{
+    display: block;
+}
+#mouth .menu-list .submenu > p a{
+    margin-left: 30px;
+    font-size: 12px;
+}
+#mouth .menu-list .submenu  span{
+    color: #ff6600;
+    margin-left: 40px;
+    font-size: 16px;
+}
+
+
+
+#recommend > p{
+    font-size: 24px;
+    color:#ff6600;
+    margin-left: 10px;
+}
+#recommend > p:after{
+    content: '';
+    display: block;
+    height: 6px;
+    width: 1200px;
+    background: #ff6600;
+    margin-top: 5px;
+    margin-left: -10px;
+}
+#recommend .recommend-list{
+    margin: 0 auto;
+}
+#recommend .recommend-list td{
+    box-sizing: border-box;
+    width: 198px;
+    height: 250px;
+    background-color: #ffffff;
+    border:2px solid #ff6600;	
+}
+#recommend .recommend-list td img{
+    margin-left: 25px;
+    
+}
+#recommend .recommend-list td p{
+    width: 78px;
+    height: 25px;
+    background: url(../images/limitTime.jpg) no-repeat;
+}
+#recommend .recommend-list td span{
+    display: inline-block;
+    margin-left: 5px;
+}
+#recommend .recommend-list td .list-text1{
+    font-size: 14px;
+    color:#333;
+}
+#recommend .recommend-list td .list-text2{
+    font-size: 14px;
+    color: #f4290d;
+}
+#recommend .recommend-list td .list-text3{
+    font-size: 24px;
+    color: #f4290d;
+}
+#welfare{
+    width: 140px;
+    height: 180px;
+    position: fixed;
+    right: 0;
+    top: 210px;
+}
+#welfare .welfare1{
+    position: absolute;
+    right: 0;
+}
+#welfare .welfare2{
+    position: absolute;
+    top: 40px;
+    right: 39px;
+}
+#welfare .welfare3{
+    position: absolute;
+    right: 0;
+    top: 40px;
+}
+#welfare .welfare4{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#welfare p{
+    width: 16px;
+    height: 16px;
+    background-color: #ff1e00;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    position: absolute;
+    right: 22px;
+    bottom: 23px;
+}
+#book{
+    margin-top: 40px;
+    position: relative;
+}
+#book > p{
+    color: #333;
+    font-size: 28px;
+}
+#book > p:after{
+    display: block;
+    height: 6px;
+    content: '';
+    background-color: #ff6600;
+    width: 900px;
+    margin-top: 6px;
+}
+#book .cut{
+    position: absolute;
+    right: 320px;
+    top: 0;
+}
+#book .cut span{
+    display: inline-block;
+    font-size: 18px;
+    color: #333;
+    line-height: 45px;
+    text-align: center;
+    width: 100px;
+}
+
+#book .cut span.cut-T{
+    background-color: #ff6600;
+    color: #fff;
+}
+
+#book .book-left table{
+    height: 150px;
+    width: 240px;
+    color: #333;
+    font-size: 14px;
+}

@@ -1,0 +1,141 @@
+/* 测试 */
+.bd{
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+/* 通栏 */
+.container-fluid{
+    min-width: 1200px;
+}
+/* 版心 */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 子绝父相 */
+.father{
+    position: relative;
+}
+/* 浮动 */
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix:after{
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+}
+/* 外边距 */
+.mt36{
+    margin-top: 36px;
+}
+.mr86{
+   margin-right:86px
+}
+
+/* 字体大小 */
+.fs12{
+    font-size: 12px;
+}
+.fs15{
+    font-size: 15px;
+}
+/* 字体颜色 */
+.fco{
+    color:orange;
+}
+.fcw{
+    color: white;
+}
+
+/* 背景颜色 */
+.bgc{
+    background-color: black;
+}
+
+/* 文本框 */
+.bd0{
+    border: 0;
+}
+
+
+
+/* head */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+#head .head-top form input{
+    outline: none;
+    border: 0;
+}
+#head .head-top{
+    height: 30px;
+}
+#head .head-top a,#head .head-top p{
+    line-height: 30px;
+}
+#head .head-top form{
+    width: 445px;
+    height: 37px;
+    border: 2px solid #ff6600;
+    box-sizing: border-box;
+}
+#head .head-top form .nav-text{
+    width: 391px;
+    height: 33px;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+#head .head-top form .nav-sub{
+    width: 50px;
+    height: 33px;
+    background: url(../images/bgicon.png) no-repeat;
+}
+#head .head-top .order{
+    position: absolute;
+    right: 0;
+}
+#head .head-top .order p{
+    width: 100px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    text-align: center;
+}
+#head .head-top .order .shop{
+    background: url(../images/bgicon.png) no-repeat 0 -42px ;
+    box-sizing: border-box;
+    padding-left: 36px;
+    background-color:#ff6600 ;
+    font-size: 14px;
+    color: #fff;
+}
+#head .head-top .order .myOrder{
+    background-color: #ebebeb;
+    box-sizing: border-box;
+    color: #808080;
+    border: 1px solid #ccc;
+}
+#head .head-top ul{
+    width: 874px;
+    height: 20px;
+    position: absolute;
+    bottom: 4px;
+    left: 236px;
+}
+#head .head-top ul li{
+    margin-right: 30px;
+    font-size: 16px;
+    color: #323232;
+    font-weight: bold;
+    float: left;
+}
+
